@@ -6,12 +6,12 @@
 /*   By: cnunez-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 11:55:31 by cnunez-s          #+#    #+#             */
-/*   Updated: 2022/06/16 11:55:36 by cnunez-s         ###   ########.fr       */
+/*   Updated: 2022/06/16 12:46:59 by cnunez-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#define tamano 10 
+#define tamano 10
 
 int main () 
 { 
