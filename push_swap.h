@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cnunez-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/25 16:32:14 by cnunez-s          #+#    #+#             */
-/*   Updated: 2022/06/27 13:53:23 by cnunez-s         ###   ########.fr       */
+/*   Created: 2022/06/27 12:55:18 by cnunez-s          #+#    #+#             */
+/*   Updated: 2022/06/27 13:45:04 by cnunez-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#ifndef PUSH_SWAP_H
+# define PUSH_SWAP_H
 
-t_list	ft_lstnew(int content)
+# define <stdio.h>
+# define <string.h>
+# define <unistd.h>
+
+typedef struct s_list
 {
-	t_list	*lst;
+	int	content;
+	struct s_list	*next;
+}	t_list;
 
-	lst = malloc(sizeof(t_list));
-	if (!lst)
-		return (NULL)
-	lst -> content = content;
-	lst -> next = NULL;
-	return (lst);
-}
+#endif
