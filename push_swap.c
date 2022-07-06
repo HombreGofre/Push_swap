@@ -6,7 +6,7 @@
 /*   By: cnunez-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/28 16:58:44 by cnunez-s          #+#    #+#             */
-/*   Updated: 2022/07/06 12:08:22 by cnunez-s         ###   ########.fr       */
+/*   Updated: 2022/07/06 13:00:52 by cnunez-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,7 @@ int	main (int argc, int **argv)
 	
 	if (argc > 1)
 	{
-		ft_parsel
-		()
+		ft_parsel()
 	}
 }
 //1º - creamos los dos stacks como listas de las variables
@@ -33,4 +32,9 @@ int	main (int argc, int **argv)
 //3º - declaramos se inicia que "argc > 1" en caso contrario no entra
 //4º - cuando entra hay que "parsear" lus numeros dados para poder trabajar
 //     en la funcion de parseo trabajaremos con split y atoi
-//5º - 
+//5º - recorremos los argumentos dados y los guardamos en el "stack A2" para poder usarlos
+//6º - al tener todo en la lista hay que comprobar que no se repiten numeros, en caso de ser
+//     asi el programa debería darnos e imprimir "Error"
+//7º - Seguido abrá que crear una funcion que nos verifique que en "stack A" estan los 
+//     nodos ordenados, en caso de ya ser ordenados no realizar ninguna acción y se termina
+//8º - En caso de no estarlo ordenarlos usando el algritmo de ordenacion deseado
