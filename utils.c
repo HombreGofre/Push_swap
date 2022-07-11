@@ -1,40 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.h                                        :+:      :+:    :+:   */
+/*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cnunez-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/27 12:55:18 by cnunez-s          #+#    #+#             */
-/*   Updated: 2022/07/11 13:56:22 by cnunez-s         ###   ########.fr       */
+/*   Created: 2022/07/11 13:53:44 by cnunez-s          #+#    #+#             */
+/*   Updated: 2022/07/11 14:05:43 by cnunez-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
+#include <push_swap.h>
 
-# define <stdio.h>
-# define <string.h>
-# define <unistd.h>
-
-typedef struct s_list
+void	ft_init_swap_var(t_var *var)
 {
-	int				content;
-	struct s_list	*next;
-	struct s_list	*prev;
-}	t_list;
-
-typedef	struct s_var
-{
-	t_list		stack_A;
-	t_list		stack_B;
-	char		**arguments;
-	int			*arg;
-	int			size;
-}	t_var;
-
-// UTILS
-
-void	ft_init_swap_var(t_var var);
-
-#endif
+	var->stack_A = NULL;
+	var->stack_B =  NULL;
+	var->arguments = 0;
+	var->i = 0;
+}

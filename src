@@ -1,0 +1,12 @@
+First : Parse
+		- Comprobar que en los argumentos son más de uno
+		- Comprobar que en caso de ser dos argumentos entre comillas que en son solo numericos
+		  y que con split y con atoi podemos introducirlos en el Stack A. Recrear una funcion
+		  que permita ver que solo hay numeros, espacios y signos siempre que esten en la
+		  posicion correcta
+		- En caso de ser más de un argumento comprbar que cada uno de ellos son sólo números.
+		  Guardar y comprobar que lo estamos guardando correctamentre en la lista.
+
+Second : Comprobar los duplicados
+		- Recorriendo la lista o al añadir a la misma desde la string comprobar que no hay 
+		  elementos repetidos. En caso de que haya elementos repetidos devolver error.

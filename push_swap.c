@@ -6,28 +6,19 @@
 /*   By: cnunez-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/28 16:58:44 by cnunez-s          #+#    #+#             */
-/*   Updated: 2022/07/06 18:40:32 by cnunez-s         ###   ########.fr       */
+/*   Updated: 2022/07/11 14:05:40 by cnunez-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.c"
+#include "push_swap.h"
 
 int	main (int argc, char **argv)
 {
-	t_list	stack_a;
-	t_list	stack_b;
-	int		tmn;
-
-	stack_a = NULL;
-	stack_b = NULL;
-	tmn = 0;
-	
-	if (argc == 1)
+	t_var	var;
+	if (argc <= 1)
 		return (0);
-	if (argc == 2)
-	{
-
-	}
+	else
+		ft_parsearg(&var);
 }
 //1º - creamos los dos stacks como listas de las variables
 //2º - iniciamos en NULL y declaramos en caso de ser los argc menor o igual a 1
