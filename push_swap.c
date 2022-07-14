@@ -6,7 +6,7 @@
 /*   By: cnunez-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/28 16:58:44 by cnunez-s          #+#    #+#             */
-/*   Updated: 2022/07/11 14:05:40 by cnunez-s         ###   ########.fr       */
+/*   Updated: 2022/07/14 11:52:22 by cnunez-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,15 @@
 int	main (int argc, char **argv)
 {
 	t_var	var;
+
+	ft_init_swap_var(&var);
 	if (argc <= 1)
 		return (0);
+	else if
+		ft_parse_one_arg(&var, argv[1]);
 	else
-		ft_parsearg(&var);
+		ft_parse_args(&var, argv);
+
 }
 //1º - creamos los dos stacks como listas de las variables
 //2º - iniciamos en NULL y declaramos en caso de ser los argc menor o igual a 1

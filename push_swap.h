@@ -6,7 +6,7 @@
 /*   By: cnunez-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 12:55:18 by cnunez-s          #+#    #+#             */
-/*   Updated: 2022/07/11 13:56:22 by cnunez-s         ###   ########.fr       */
+/*   Updated: 2022/07/14 12:03:32 by cnunez-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,12 @@ typedef	struct s_var
 
 // UTILS
 
-void	ft_init_swap_var(t_var var);
+void	ft_init_swap_var(t_var *var);
+
+// PARSE
+
+void	ft_parse_one_arg(t_var *var, char *argv);
+void	ft_parse_args(t_var *var, char **argv);
+
 
 #endif

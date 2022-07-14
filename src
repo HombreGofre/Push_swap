@@ -6,7 +6,16 @@ First : Parse
 		  posicion correcta
 		- En caso de ser más de un argumento comprbar que cada uno de ellos son sólo números.
 		  Guardar y comprobar que lo estamos guardando correctamentre en la lista.
+		- Y añadir directamente los elementos al "stack_A" en forma de lista doblemente enlazada.
 
 Second : Comprobar los duplicados
 		- Recorriendo la lista o al añadir a la misma desde la string comprobar que no hay 
 		  elementos repetidos. En caso de que haya elementos repetidos devolver error.
+
+Third : Organizar
+		- A traves de la sting que nos dan como arguemntos comprobar que si están ordenados no tenemos
+		  que realizar ninguna acción adicional.
+		- En caso de que no estén ordenados procederemos a ejecutar el algoritmo que hemos preparado
+		  para la ordenacion de los numemros a traves de los stacks A y B.
+Fourth : Algoritmo
+		- 
