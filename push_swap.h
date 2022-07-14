@@ -6,7 +6,7 @@
 /*   By: cnunez-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 12:55:18 by cnunez-s          #+#    #+#             */
-/*   Updated: 2022/07/14 12:03:32 by cnunez-s         ###   ########.fr       */
+/*   Updated: 2022/07/14 15:50:18 by cnunez-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,17 @@ typedef	struct s_var
 // UTILS
 
 void	ft_init_swap_var(t_var *var);
+int		ft_isdigit(int c);
+size_t	ft_strlen(char *s);
+char	**ft_split(char const *s, char c);
+char	*ft_substr(char const *s, size_t start, size_t len);
 
 // PARSE
 
 void	ft_parse_one_arg(t_var *var, char *argv);
 void	ft_parse_args(t_var *var, char **argv);
+void	ft_check_alnum(char **argv);
+void	ft_check_space(char *argv);
 
 
 #endif

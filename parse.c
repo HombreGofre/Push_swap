@@ -6,7 +6,7 @@
 /*   By: cnunez-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 10:58:21 by cnunez-s          #+#    #+#             */
-/*   Updated: 2022/07/14 13:10:09 by cnunez-s         ###   ########.fr       */
+/*   Updated: 2022/07/14 14:51:25 by cnunez-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,13 @@ void	ft_parse_args(t_var *var, char **argv)
 
 //comprobará que solamemnte haya nunmeros, espacios y signos en los argumentos
 void	ft_check_alnum(char **argv)
+{
+
+}
+
+//comprobar que en el arguemto que nos dan, no encontramos el string vacio, ya que como 
+//segundo argumento nos pueden poner solamente un espacio en blanco
+void	ft_check_space(char *argv)
 {
 
 }
