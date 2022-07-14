@@ -6,11 +6,11 @@
 #    By: cnunez-s <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/27 12:52:53 by cnunez-s          #+#    #+#              #
-#    Updated: 2022/07/14 15:55:01 by cnunez-s         ###   ########.fr        #
+#    Updated: 2022/07/14 16:03:12 by cnunez-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS	=	parse.c 
+SRCS	=	ft_parse.c 
 OBJS	=	${SRCS:.c=.o}
 NAME	=	push_swap.a
 CC			=	gcc
