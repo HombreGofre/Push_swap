@@ -1,6 +1,7 @@
 First : Parse
 		- Comprobar que en los argumentos son más de uno
-		- Comprobar que en caso de ser dos argumentos entre comillas que en son solo numericos
+		- Al ver que son dos argumentos vemos que no están en blanco y que solo están los numeros.
+		- Comprobar que en caso de ser dos argumentos entre comillas, que son solo numericos
 		  y que con split y con atoi podemos introducirlos en el Stack A. Recrear una funcion
 		  que permita ver que solo hay numeros, espacios y signos siempre que esten en la
 		  posicion correcta

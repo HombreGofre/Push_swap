@@ -6,7 +6,7 @@
 /*   By: cnunez-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 10:58:21 by cnunez-s          #+#    #+#             */
-/*   Updated: 2022/07/14 14:51:25 by cnunez-s         ###   ########.fr       */
+/*   Updated: 2022/07/15 13:08:06 by cnunez-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,25 @@ void	ft_check_alnum(char **argv)
 
 }
 
-//comprobar que en el arguemto que nos dan, no encontramos el string vacio, ya que como 
-//segundo argumento nos pueden poner solamente un espacio en blanco
+//Comprobar que sólo hay un espacio al final y al principio del string
+//También que solo hay un espacio entre nuemros
 void	ft_check_space(char *argv)
 {
+	int	i;
 
+	i = 0;
+	while (argv[i])
+	{
+		if (argv[1] && argv[i] == ' ' && argv[i + 1] == ' ')
+		{
+			ft_putstr_fd("Error\n", 2);
+			exit (1);
+		}
+		if (argv[0] == ' ' || (!argv[i + 1] && argv[i] ==  ' '))
+		{
+			ft_putstr_fd("Error\n", 2);
+			exit (1);
+		}
+		i++;
+	}
 }
