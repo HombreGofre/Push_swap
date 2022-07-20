@@ -6,7 +6,7 @@
 /*   By: cnunez-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 10:58:21 by cnunez-s          #+#    #+#             */
-/*   Updated: 2022/07/20 18:14:22 by cnunez-s         ###   ########.fr       */
+/*   Updated: 2022/07/20 20:14:42 by cnunez-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,26 @@ void	ft_check_alnum(char **argv)
 	int	i;
 
 	i = 0;
+	while (argv[i])
+	{
+		if (argv[i] == ' ')
+		{
+			ft_putstr_fd("Error\n", 2);
+			exit (1);
+		}
+		if (!ft_isdigit(argv[i]) || argv[i] != ' ' ||
+					argv[i] != '+' || argv[i] != '-')
+		{
+			ft_putstr_fd("Error\n", 2);
+			exit (1);
+		}
+		if (!ft_isdigit(argv[i + 1]) && (agrv[i] == '+' || argv[i] == '-'))
+		{
+			ft_putstr_fd("Error\n", 2);
+			exit (1);
+		}
+		i++;
+	}
 }
 
 //Comprobar que sólo hay un espacio al final y al principio del string

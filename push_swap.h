@@ -6,7 +6,7 @@
 /*   By: cnunez-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 12:55:18 by cnunez-s          #+#    #+#             */
-/*   Updated: 2022/07/20 17:53:33 by cnunez-s         ###   ########.fr       */
+/*   Updated: 2022/07/20 20:14:37 by cnunez-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # define <stdio.h>
 # define <string.h>
 # define <unistd.h>
+# define <limits.h>
 
 typedef struct s_list
 {
@@ -40,6 +41,7 @@ int		ft_isdigit(int c);
 size_t	ft_strlen(char *s);
 char	**ft_split(char const *s, char c);
 char	*ft_substr(char const *s, size_t start, size_t len);
+int		ft_atoi(const char *str);
 
 // PARSE
 
