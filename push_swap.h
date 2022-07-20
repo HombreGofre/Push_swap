@@ -6,7 +6,7 @@
 /*   By: cnunez-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 12:55:18 by cnunez-s          #+#    #+#             */
-/*   Updated: 2022/07/14 15:50:18 by cnunez-s         ###   ########.fr       */
+/*   Updated: 2022/07/20 17:53:33 by cnunez-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ typedef struct s_list
 
 typedef	struct s_var
 {
-	t_list		stack_A;
-	t_list		stack_B;
+	t_list		*stack_A;
+	t_list		*stack_B;
 	char		**arguments;
 	int			*arg;
 	int			size;

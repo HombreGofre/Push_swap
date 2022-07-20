@@ -1,40 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.c                                            :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cnunez-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/11 13:53:44 by cnunez-s          #+#    #+#             */
-/*   Updated: 2022/07/20 14:17:37 by cnunez-s         ###   ########.fr       */
+/*   Created: 2022/07/20 16:25:32 by cnunez-s          #+#    #+#             */
+/*   Updated: 2022/07/20 17:03:20 by cnunez-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <push_swap.h>
+#include "push_swap.h"
 
-void	ft_init_swap_var(t_var *var)
+void	ft_lstnew(int content)
 {
-	var->stack_A = NULL;
-	var->stack_B =  NULL;
-	var->item_A = 0;
-	var->item_B = 0;
-	var->arguments = 0;
-	var->i = 0;
-}
-
-int	ft_isdigit(int c)
-{
-	if (c >= '0' && c <= '9')
-		return (1);
-	return (0);
-}
-
-size_t ft_strlen(char *s)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
+	t_list	lst;
+	
+	lst = malloc(sizeof(t_list));
+	if (!lst)
+		exit (1);
+	lst->content = content;
+	lst->prev;
+	lst->next = NULL;
 }
