@@ -62,7 +62,7 @@ void	ft_check_alnum(char **argv)
 			ft_putstr_fd("Error\n", 2);
 			exit (1);
 		}
-		if ()
+		if (ft_strlen(argv) > 11 || )
 		i++;
 	}
 }
