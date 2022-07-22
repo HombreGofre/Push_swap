@@ -31,6 +31,7 @@ void	ft_parse_one_arg(t_var *var, char *argv)
 		ft_charck_alnum(split[i]);
 		i++;
 	}
+
 }
 
 //Se usa en caso de que los nuemros vengan dados como mñas de un argumento
@@ -47,23 +48,21 @@ void	ft_check_alnum(char **argv)
 	while (argv[i])
 	{
 		if (argv[i] == ' ')
-		{
 			ft_putstr_fd("Error\n", 2);
-			exit (1);
-		}
-		if (!ft_isdigit(argv[i]) || argv[i] != ' ' ||
-					argv[i] != '+' || argv[i] != '-')
-		{
+		else if (!ft_isdigit(argv[i]) || argv[i] != ' ' ||
+				argv[i] != '+' || argv[i] != '-')
 			ft_putstr_fd("Error\n", 2);
-			exit (1);
-		}
-		if (!ft_isdigit(argv[i + 1]) && (agrv[i] == '+' || argv[i] == '-'))
-		{
+		else if (!ft_isdigit(argv[i + 1]) && (agrv[i] == '+' || argv[i] == '-'))
 			ft_putstr_fd("Error\n", 2);
-			exit (1);
+		else if (ft_strlen(argv) > 11 
+				|| ft_atoi(argv) < INT_MAX || ft_atoi(argv) > INT_MAX)
+			ft_putstr_fd("Error\n", 2);
+		else
+		{
+			i++;
+			continue ;
 		}
-		if (ft_strlen(argv) > 11 || )
-		i++;
+		exit (1);
 	}
 }
 

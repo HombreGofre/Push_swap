@@ -17,6 +17,7 @@
 # define <string.h>
 # define <unistd.h>
 # define <limits.h>
+# define <stdlib.h>
 
 typedef struct s_list
 {
